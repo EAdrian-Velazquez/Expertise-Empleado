@@ -1,0 +1,292 @@
+/*Hecho por Adrián Velázquez*/
+body {
+	background-image: url("imagenes/imagen1.png");
+/*	width: 100vw;
+	height: 90vh;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.disabledDiv{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+input {
+	z-index: 1000 !important;
+}
+input[type=checkbox] {
+  /* All browsers except webkit*/
+  transform: scale(1.5);
+
+  /* Webkit browsers*/
+  -webkit-transform: scale(1.5);
+}
+#container{
+	margin-top: 43px;
+}
+#btnCloseSesion:hover{
+	cursor: pointer;
+	border: solid 2px #FA2626;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.panel-warning > .panel-heading {
+     padding: 5px 10px !important;
+}
+.panel-primary > .panel-body {
+     padding: 5px 10px !important;
+}
+.input-group .form-control
+{
+  position: relative;
+  z-index: 0 !important;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.group-item:first-child {
+    border-top: none;
+}
+.list-group-item{
+	cursor: pointer;
+}
+.list-group-item:hover{
+	background: #F1F1F1;
+}
+.trasnformToUpper{
+	text-transform:uppercase;
+}
+.ui-widget-header {
+    color: #fff !important;
+    background: #337ab7 !important;
+    border-color: #337ab7 !important;
+}
+.ui-widget-overlay {
+   	background: black;
+   	opacity: .5;
+}
+.ui-dialog {
+    border: 1px solid rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+.label {
+	font-size: 15px;
+    text-shadow: 1px 2px 1px #292929;
+    position: relative;
+    top: 5px;
+}
+.bb-alert {
+	position: absolute;
+    right: 38px;
+    top: 63px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 2000;
+}
+.panel-title {
+	font-weight: bold;
+}
+.titulo {
+	width: 100%;
+    height: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28),0 2px 10px 0 rgba(0, 0, 0, 0.52)!important;
+    background-image: url(img/banner_new.bmp);
+    position: fixed;
+    z-index: 11;
+    top: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+    background: -moz-linear-gradient(top, #8BD7FF 5%, #1A8DDF 100%);
+    background: -webkit-linear-gradient(top, #8BD7FF 5%, #1A8DDF 100%);
+    background: -o-linear-gradient(top, #8BD7FF 5%, #1A8DDF 100%);
+    background: -ms-linear-gradient(top, #8BD7FF 5%, #1A8DDF 100%);
+    background: linear-gradient(to bottom, #8BD7FF 5%, #1A8DDF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+    background-color: #007dc1;
+}
+.info,.exito,.alerta,.error {
+	border-radius: 10px;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:15px;
+	font-weight: bold;
+	padding:15px 10px 15px 90px;
+	background-repeat: no-repeat;
+	background-position: 10px 8px;
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.28),0 3px 10px 0 rgba(0, 0, 0, 0.52)!important;
+
+}
+.info {
+	color: #00529B;
+	/*background-color: #BDE5F8;*/
+	background-color: red;
+	background-image: url('img/info.png');
+}
+.exito {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image:url('img/exito.png');
+}
+.alerta {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('img/alerta.png');
+}
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('img/error.png');
+}
+.imgStyle {
+	max-width: 100%;
+	height: auto;
+}
+.iconpointer {
+	cursor: pointer;
+	font-size: 18px;
+	display: none;
+	float: right;
+    margin-right: 60%;
+}
+.iconpointerAdd {
+	cursor: pointer;
+	font-size: 18px;
+	float: right;
+    margin-right: 60%;
+}
+.addImagen {
+	cursor: pointer;
+	font-size: 20px;
+}
+#frmLogin {
+	width: 35%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+	border: 2px solid #6F6F6F;
+	border-radius: 15px;
+	background-image: url(img/ui-bg_flat_75_ffffff_40x100.png); 
+}
+#btnCerrarSession {
+	float: right;
+	margin-top: 4.5%;
+	margin-right: 1%;
+	font-weight: bold;
+}
+#imgcoppel {
+	width: 115px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#encabezado th {
+	text-align: center;
+	font: bold 14px 'trebuchet MS', 'Lucida Sans', Arial;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top: 1px solid #eaeaea;
+	color: white;
+	background: #5c9ccc;
+}
+#bodytablaConsultada:hover {
+	background-image: url(img/ui-bg_glass_75_dadada_1x400.png);
+}
+#example tbody tr:hover {
+	cursor: pointer;
+	background-image: url(img/ui-bg_glass_75_dadada_1x400.png);
+}
+#TablaFinal {
+	border-collapse: separate;
+	color: #2a2a2a;
+	background: #fafafa;
+	border: 2px #4297d7 solid;
+	border-radius: 10px;
+	text-align: center;
+}
+#piedepagina {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	color: #FFFFFF;
+	background-image:url(imagenes/banner_bg9.jpg);
+	text-align: center;
+	font-size: x-small;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 8px;
+	z-index: 10;
+}
+
+#footer {
+	top: 132px;
+	position: fixed;
+    right: 450px;
+	font-size: medium;  ;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 8px;
+}
+
+
+
+.table-fixed thead {
+  width: 97.7%;
+}
+.table-fixed tbody {
+  height: 32px;
+  overflow-y: scroll;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 1;
+}
+
+.table-new thead {
+  width: 97.7%;
+}
+.table-new tbody {
+  height: 32px;
+  
+  width: 105.5%;
+}
+.table-new thead, .table-new tbody, .table-new tr, .table-new td, .table-new th {
+  display: block;
+}
+.table-new tbody td, .table-new thead > tr> th {
+  float: left;
+  border-bottom-width: 1;
+}
+
+.table-new2 thead {
+  width: 97.7%;
+}
+.table-new2 tbody {
+  height: 32px;
+  
+  width: 104%;
+}
+.table-new2 thead, .table-new2 tbody, .table-new2 tr, .table-new2 td, .table-new2 th {
+  display: block;
+}
+.table-new2 tbody td, .table-new2 thead > tr> th {
+  float: left;
+  border-bottom-width: 1;
+}
+.scrollMostrar{
+	overflow-y: scroll;
+}
+
+.nowrapinput{
+  position: relative;
+  float: left;
+  text-align: left;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 0;
+  z-index: 1000 !important;
+}

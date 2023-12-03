@@ -1,0 +1,46 @@
+/*********************Estilos de tabla principal******************************/
+/*color de fondo*/
+body{
+    /*background-color:#dee2e6;*/
+    /*background-color:#ffdd2f;*/
+    /*background-color:black; ffdd2f*/
+    background-image: url("../assets/css/imagenes/fondo_Index.png");
+/*	width: 100vw;
+	height: 90vh;*/
+	background-repeat: no-repeat;
+	background-size: 90%;
+  
+}
+/*Color cabecera de tabla*/
+ table.dataTable thead {
+    background: #006CBA;
+    color:white;
+}
+
+.table-bordered.tablaUsuariosAvance>:not(caption)>*>* {
+    border-width: 0 7px;
+    border-color: white;
+}
+
+.caja{
+  /* border: 1px solid; */
+  padding: 5px;
+  box-shadow: 10px 10px 50px 1px #7c7c81;
+  border-radius: 10px;
+}
+
+.deshabilitado{
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.deshabilitado::before{
+  content: '';
+  display: block;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.6);
+}
